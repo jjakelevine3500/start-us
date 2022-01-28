@@ -24,7 +24,7 @@
                 <a href="/member-dashboard/">Dev Dashboard</a> |
                 <a id="member-logout" href="/">Logout</a>
                 {{else}}
-                <a href="/">How it Works</a> |
+                <a href="/how-it-works">How it Works</a> |
                 <a href="/developer-login/">Developer Login</a> |
                 <a href="/member-login/">Member Login</a>
                 {{/if}}
@@ -65,7 +65,8 @@
         </footer>
     </div>
     {{#if loggedIn}}
-    <script src=""></script>
+    <script src="/javascript/developer-logout.js"></script>
+    <script src="/javascript/member-logout.js"></script>
     {{/if}}
 </body>
 

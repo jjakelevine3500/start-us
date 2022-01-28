@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+h3 {
+    color: #27AAE1;
+}
 a {
     text-decoration: none;
     color: #27AAE1;
