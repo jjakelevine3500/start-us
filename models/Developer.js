@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequilize');
+const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
@@ -16,7 +16,7 @@ Developer.init(
             primaryKey: true,
             autoIncrement: true
         },
-        username: {
+        devname: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -43,7 +43,7 @@ Developer.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user'
+        modelName: 'developer'
     }
 );
 
