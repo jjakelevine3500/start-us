@@ -17,30 +17,56 @@
             </a>
             <nav>
                 <a href="/">Home</a> |
-                
-               
                 <a href="/developer-dashboard/">Dev Dashboard</a> |
                 <a id="developer-logout" href="/">Logout</a>
                 <a href="/member-dashboard/">Dev Dashboard</a> |
                 <a id="member-logout" href="/">Logout</a>
-               
                 <a href="/">How it Works</a> |
                 <a href="/developer-login/">Developer Login</a> |
                 <a href="/member-login/">Member Login</a>
-             
             </nav>
         </header>
-        <main>
-            <div class="jumbotron">
-                <h1 class="display-4">DON'T YOU LOVE</br>
-                    WHEN EVERYBODY WINS?
-                </h1>
-                
-                <p class="lead">This is This is how it is at START US!</p>
-                </br>
-                <button type="submit" class="px-5">Learn more</button>
-              </div>
-          
+    <main>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col">
+                    <form class="login-form">
+                        <h1>Member Login</h1>
+                        <h4>Welcome back!</h4>
+                        <div class="form-group">
+                            <label for="email-login">Email address</label>
+                            <input type="text" class="form-control" id="email-login" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password-login">Password</label>
+                            <input type="password" class="form-control" placeholder="Password" id="password-login">
+                        </div>
+                        <button type="submit" class="px-5">LOGIN</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <form class="signup-form">
+                        <h1>Member Sign Up</h1>
+                        <h4>Let's grow together!</h4>
+                        <div class="form-group">
+                            <label for="membername-signup">Username</label>
+                            <input type="text" class="form-control" id="membername-signup">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-signup">Email address</label>
+                            <input type="text" class="form-control" id="email-signup" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password-signup">Password</label>
+                            <input type="password" class="form-control" id="password-signup">
+                        </div>
+                        <button type="submit" class="px-5">SIGNUP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script scr="/javascript/member-login.js"></script>
+
         </main>
         <footer>
             <div class="container">
@@ -49,7 +75,7 @@
                         <h4>Categories</h4>
                         <ul>
                             <li>Web Design</li>
-                            <li>Graphic Design</li>
+                            <li>Online Marketing</li>
                             <li>Programming &amp; Tech</li>
                         </ul>
                     </div>
@@ -73,9 +99,6 @@
             </div>
         </footer>
     </div>
- 
-    <script src=""></script>
-
 </body>
 
 </html>
