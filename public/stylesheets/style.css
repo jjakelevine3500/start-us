@@ -24,6 +24,12 @@ button {
     transition: background-color .1s;
     cursor: pointer;
 }
+#accept-project {
+    background-color: cadetblue;
+}
+#accept-project:hover {
+    background-color: #DF8A27;
+}
 
 .button:hover {
     background-color: #27AAE1;
