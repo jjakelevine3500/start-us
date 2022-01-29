@@ -16,7 +16,7 @@ Member.init(
             primaryKey: true,
             autoIncrement: true
         },
-        username: {
+        membername: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -53,7 +53,7 @@ Member.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user'
+        modelName: 'member'
     }
 );
 

@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+h3 {
+    color: #27AAE1;
+}
+a {
+    text-decoration: none;
+    color: #27AAE1;
+    font-weight: bold;
+    transition: color .1s;
+}
+
+a:hover {
+    color: #DF8A27;
+}
+
+button {
+    background-color: #DF8A27;
+    border: 0;
+    padding: 1%;
+    color: white;
+
+    transition: background-color .1s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #27AAE1;
+    color: #333;
+    text-decoration: none;
+}
+
+.jumbotron {
+    background-image: url('../assets/hero.jpg');
+    background-size: cover;
+}
+
+
+.service-list {
+    margin: 0;
+    padding: 0;
+}
+
+textarea,
+input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #888;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border: 1px solid #27AAE1;
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+form>div {
+    margin-bottom: 2%;
+}
+
+form label {
+    display: block;
+}
+
+.login-form {
+
+    padding: 1%;
+
+}
+
+.signup-form {
+
+    padding: 1%;
+
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 1em;
+}
+
+
+.btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #DF8A27;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+}
+
+.btn-no-style:hover {
+    background: none;
+    color: #2F5161;
+}
+
+.delete-service-btn {
+    background-color: #DF8A27;
+}
+
+.delete-service-btn:hover {
+    background-color: #fad45d;
+}
+
+.service {
+    margin-bottom: 2%;
+    line-height: 150%;
+    border: 1px solid #27AAE1;
+    padding: 15px,
+}
+
+.title {
+    background-color: #2F5161;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.meta {
+    padding: 15px;
+
+}
+
+.service .title span {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 70%;
+    color: #000;
+    align-content: right;
+}
+
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+}
+
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+    background-color: #ebfbff;
+}
+
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+
+.new-service-form input {
+    width: 300px;
+}
+
+.edit-service-form {
+    margin-bottom: 5%;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+}
