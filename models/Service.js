@@ -1,0 +1,42 @@
+const { Model, DataTypes } = require('sequelize'); 
+const sequelize = require('../config/connection');
+
+class Service extends Model {}
+
+Service.init (
+    {
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        service_type: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        service_description: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        budget: {
+            type: DataTypes.DECIMAL,
+            allowNull: false
+        },
+        member_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'member',
+                key: 'id'
+            }
+        }
+    },
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'service'
+    }
+);
+
+module.exports = Service;
