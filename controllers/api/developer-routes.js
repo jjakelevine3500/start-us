@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
                 exclude: ['password']
             }
         })
-        .then(dbUserData => res.json(dbUserData))
+        .then(dbDeveloperData => res.json(dbDeveloperData))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
@@ -63,6 +63,26 @@ router.post('/', (req, res) => {
     });
 });
 
+router.put('/:id', (req, res) => {
+    Developer.update(req.body, {
+        individualHooks: true,
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(dbDeveloperData => {
+        if (!dbDeveloperData) {
+            res.json(404).json({ message: 'No user found with this ID' });
+            return;
+        }
+        res.json(dbDeveloperData);
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+})
+
 // delete a developer
 router.delete('/:id', (req, res) => {
     Developer.destroy({
@@ -75,4 +95,6 @@ router.delete('/:id', (req, res) => {
             res.status(404).json 
         }
     })
-})
+});
+
+module.exports = router;
