@@ -62,3 +62,17 @@ router.post('/', (req, res) => {
         res.status(500).json(err);
     });
 });
+
+// delete a developer
+router.delete('/:id', (req, res) => {
+    Developer.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(dbDeveloperData => {
+        if (!dbDeveloperData) {
+            res.status(404).json 
+        }
+    })
+})
